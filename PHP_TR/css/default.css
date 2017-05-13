@@ -1,0 +1,120 @@
+/*Reset CSS*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+html {
+	background-color: #6F9BF1;
+	width: 720px;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+}
+body {
+}
+a:link , a:visited{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+header {
+	border: solid black 1px;
+	border-radius: 0px 25px 0px 25px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #161998;
+}
+footer {
+	border: solid black 1px;
+	border-radius: 0px 25px 0px 25px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #161998;
+}
+#head {
+
+}
+#navbar {
+	text-align: right;
+	background-color: #161998;
+}
+#navbar a:link, a:visited {
+	border: solid 1px white;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 2px;
+	margin: 2px;
+	background-color: #F9A30F;
+}
+#navbar a:hover {
+	border: none;
+	padding: 3px;
+	margin: 2px;
+}
+#content {
+	border: solid black 1px;
+	border-radius: 0px 25px 0px 25px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #161998;
+}
+ul {
+	padding-left: 20px;
+}
+.button {
+	font-size: 18px;
+	border: solid white 1px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #F9A30F;
+	color: #FFFFFF;
+	margin: 5px;
+}
+.button:link, .button:visited {
+	text-decoration: none;
+}
+.button:hover {
+	font-size: 18px;
+	color: red;
+	text-decoration: none;
+	border: none;
+	padding: 1px;
+	margin: 5px;
+}
+.block {
+	margin-left: 29%;
+	display: block;
+	
+}
+.formular {
+	display: block;
+	margin-top: -110px;
+}
+hr {
+	width:98%;
+	background-color:white;
+	height:1px;
+	margin-bottom: -20px;
+	text-align:left;
+}
+.formular2 {
+	display: block;
+	margin-top: -10px;
+}
+.uebertrag {
+	font-size: 18px;
+	border: solid white 1px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #FF4040;
+	color: #FFFFFF;
+	margin: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
