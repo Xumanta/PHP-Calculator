@@ -25,14 +25,14 @@ a:hover {
 }
 header {
 	border: solid black 1px;
-	border-radius: 0px 25px 0px 25px;
+	border-radius: 0 25px 0 25px;
 	margin: 10px;
 	padding: 10px;
 	background-color: #161998;
 }
 footer {
 	border: solid black 1px;
-	border-radius: 0px 25px 0px 25px;
+	border-radius: 0 25px 0 25px;
 	margin: 10px;
 	padding: 10px;
 	background-color: #161998;
@@ -59,7 +59,7 @@ footer {
 }
 #content {
 	border: solid black 1px;
-	border-radius: 0px 25px 0px 25px;
+	border-radius: 0 25px 0 25px;
 	margin: 10px;
 	padding: 10px;
 	background-color: #161998;
@@ -71,9 +71,8 @@ ul {
 	font-size: 18px;
 	border: solid white 1px;
 	border-radius: 5px;
-	color: #FFFFFF;
+	color: white;
 	background-color: #F9A30F;
-	color: #FFFFFF;
 	margin: 5px;
 }
 .button:link, .button:visited {
@@ -111,9 +110,8 @@ hr {
 	font-size: 18px;
 	border: solid white 1px;
 	border-radius: 5px;
-	color: #FFFFFF;
 	background-color: #FF4040;
-	color: #FFFFFF;
+	color: white;
 	margin: 5px;
 	padding-left: 2px;
 	padding-right: 2px;

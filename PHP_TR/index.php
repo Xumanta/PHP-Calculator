@@ -1,4 +1,4 @@
-<?PHP
+<?php
 header('Location: rechner.php');
 exit;
 ?>

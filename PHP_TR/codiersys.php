@@ -1,7 +1,12 @@
-<?PHP
+<?php
+/*
+ * Author: Julian Mahle
+ * Last Edit: 30.03.2018
+ * Name: codiersys.php
+ */
 session_start();
-set_include_path('inc');
-include "inc/head.php";
+set_include_path('./inc');
+include "head.php";
 
 if (isset($_GET["dec"])) {
 	
@@ -75,41 +80,40 @@ ENDE;
 	print "Als Hexadezimalzahl: ";
 	print dechex($dec)."<br />";
 	print <<<ENDE
-	<br /><a href="codiersys.php" class="button">Neue Zahlen eingeben</a>
+    <br /><a href="codiersys.php" class="button">Neue Zahlen eingeben</a>
 ENDE;
 } else {
-print <<<ENDE
+?>
 <div class="block">
 Hier werden dir Dezimal-, Hexadezimal-, Binär- oder Oktalzahlen in jeweils Dezimal-, Hexadezimal-, Binär- oder Oktalzahlen umgewandelt.<br />
 Gib einfach deine Dezimal-, Hexadezimal-, Binär- oder Oktalzahl an und siehe, was passiert!<br />
-<span style="color:red">Info: Komma (,) muss als Punkt (.) geschrieben werden!</span></div>
-<div class="formular">
-<form action="codiersys.php" method="get" class="formular2">
-	<p><strong>Dezimalzahl:</strong><br /><input name="dec" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
-	<input type="submit" value="Umwandeln" class="button" />
-	<input type="reset" value="Reset" class="button" />
-</form>
-<br />
-<form action="codiersys.php" method="get" class="formular2">
-	<p><strong>Bin&auml;rzahl:</strong><br /><input name="bin" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
-	<input type="submit" value="Umwandeln" class="button" />
-	<input type="reset" value="Reset" class="button" />
-</form>
-<br />
-<form action="codiersys.php" method="get" class="formular2">
-	<p><strong>Hexadezimalzahl:</strong><br /><input name="hex" type="text" size="20" maxlength="255" autocomplete="off" required="required" /></p>
-	<input type="submit" value="Umwandeln" class="button" />
-	<input type="reset" value="Reset" class="button" />
-</form>
-<br />
-<form action="codiersys.php" method="get" class="formular2">
-	<p><strong>Oktalzahl:</strong><br /><input name="oct" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
-	<input type="submit" value="Umwandeln" class="button" />
-	<input type="reset" value="Reset" class="button" />
-</form>
+    <span style="color:red">Info: Komma (,) muss als Punkt (.) geschrieben werden!</span>
 </div>
-ENDE;
+<div class="formular">
+    <form action="codiersys.php" method="get" class="formular2">
+        <p><strong>Dezimalzahl:</strong><br /><input name="dec" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
+        <input type="submit" value="Umwandeln" class="button" />
+        <input type="reset" value="Reset" class="button" />
+    </form>
+    <br />
+    <form action="codiersys.php" method="get" class="formular2">
+        <p><strong>Bin&auml;rzahl:</strong><br /><input name="bin" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
+        <input type="submit" value="Umwandeln" class="button" />
+        <input type="reset" value="Reset" class="button" />
+    </form>
+    <br />
+    <form action="codiersys.php" method="get" class="formular2">
+        <p><strong>Hexadezimalzahl:</strong><br /><input name="hex" type="text" size="20" maxlength="255" autocomplete="off" required="required" /></p>
+        <input type="submit" value="Umwandeln" class="button" />
+        <input type="reset" value="Reset" class="button" />
+    </form>
+    <br />
+    <form action="codiersys.php" method="get" class="formular2">
+        <p><strong>Oktalzahl:</strong><br /><input name="oct" type="number" size="20" maxlength="255" autocomplete="off" required="required" /></p>
+        <input type="submit" value="Umwandeln" class="button" />
+        <input type="reset" value="Reset" class="button" />
+    </form>
+</div>
+<?php
 }
-
-include "inc/foot.php";
-?>
+include "foot.php";

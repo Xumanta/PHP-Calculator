@@ -1,7 +1,12 @@
-<?PHP
+<?php
+/*
+ * Author: Julian Mahle
+ * Last Edit: 30.03.2018
+ * Name: logar.php
+ */
 session_start();
-set_include_path('inc');
-include "inc/head.php";
+set_include_path('./inc');
+include "head.php";
 
 if (isset($_GET["z1"]) && isset($_GET["z2"])) {
 	if (is_numeric($_GET["z1"]) && is_numeric($_GET["z2"])) {
@@ -20,14 +25,14 @@ if (isset($_GET["z1"]) && isset($_GET["z2"])) {
 		<br /><a href="logar.php" class="button">Neue Zahlen eingeben</a>
 ENDE;
 	} else {
-	print <<<ENDE
-	<span style="color:red;">Deine Zahlen sind keine Zahlen! Bitte korrigiere sie!</span>
-	<br /><a href="logar.php" class="button">Zahlen eingeben</a>
+	    print <<<ENDE
+	    <span style="color:red;">Deine Zahlen sind keine Zahlen! Bitte korrigiere sie!</span>
+	    <br /><a href="logar.php" class="button">Zahlen eingeben</a>
 ENDE;
 	}
 } else {
 
-print <<<ENDE
+?>
 <div class="block"><br />
 Du kannst hier dir deinen Logarithmus rechnen lassen!<br />Er rechnet standartm&auml;ssig zur 10er-Basis, du kannst aber auch jede andere Basis angebem!<br />
 <span style="color:red">Info: Komma (,) muss als Punkt (.) geschrieben werden!</span></div>
@@ -37,9 +42,8 @@ Du kannst hier dir deinen Logarithmus rechnen lassen!<br />Er rechnet standartm&
 	<input type="submit" value="Rechne" class="button" />
 	<input type="reset" value="Reset" class="button" />
 </form><br /><br /><br />
-ENDE;
+<?php
 
 }
 
-include "inc/foot.php";
-?>
+include "foot.php";
